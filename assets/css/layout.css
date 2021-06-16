@@ -192,10 +192,16 @@ ul, ol{
     height: 20px;
 }
 @media only screen and (max-width: 360px){
+    .header-panel .content{
+        flex-direction: column;
+    }
     
-.inline-block{
-    display: block;
-}
+    .content {
+        width: 320px;
+    }
+    .inline-block{
+        display: block;
+    }
     .extra-small-side-padding{
         padding-left: 20px !important;
         padding-right: 20px !important;
@@ -295,10 +301,17 @@ ul, ol{
     }
 }
 @media only screen and (min-width: 360px) and (max-width: 450px){
-        
-.inline-block{
-    display: block;
-}
+    .header-panel .content{
+        flex-direction: column;
+    }
+    
+     
+    .content {
+        width: 360px;
+    }   
+    .inline-block{
+        display: block;
+    }
     .extra-small-side-padding{
         padding-left: 20px !important;
         padding-right: 20px !important;
@@ -400,6 +413,13 @@ ul, ol{
 
 }
 @media only screen and (min-width: 450px) and (max-width: 736px){
+    .header-panel .content{
+        flex-direction: column;
+    }
+    
+    .content {
+        width: 450px;
+    }
     .extra-small-side-padding{
         padding-left: 10px !important;
         padding-right: 10px !important;
@@ -500,7 +520,18 @@ ul, ol{
     }
 
 }
-@media only screen and (min-width: 736px) and (max-width: 1200px){
+@media only screen and (min-width: 736px) and (max-width: 1080px){
+    .header-panel .content{
+        flex-direction: row;
+    }
+    
+    .content {
+        width: 736px;
+    }
+    #navigation-logo{
+        height: 50px;
+        flex: 3;
+    }
     .extra-small-side-padding{
         padding-left: 10px !important;
         padding-right: 10px !important;
@@ -601,9 +632,19 @@ ul, ol{
     }
     
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1080px){
+    .header-panel .content{
+        flex-direction: row;
+    }
     .container {
         margin-left: 360px;
+      }
+      .content{
+          width: 1080px;
+      }
+      #navigation-logo{
+          height: 50px;
+          flex: 5;
       }
 
       .extra-small-side-padding{
